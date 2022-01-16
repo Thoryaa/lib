@@ -1,11 +1,11 @@
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-/**/
+/*
 
 :root {
     --main: #4d6684;
@@ -41,13 +41,13 @@ nav>div span:active {
 }
 
 
-/**/
+/*
 
 footer {
     background: #b5b4b3;
     padding: 26px;
     display: grid;
-    /* flex-direction: column; */
+    /* flex-direction: column; 
     justify-content: flex-start;
     direction: rtl;
 }
@@ -95,10 +95,10 @@ footer input[type='email'] {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) 
 
 @media only screen and (min-width: 600px) {
     footer {
@@ -107,7 +107,7 @@ footer input[type='email'] {
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
 
 @media only screen and (min-width: 768px) {
     footer {
@@ -116,7 +116,7 @@ footer input[type='email'] {
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
 
 @media only screen and (min-width: 992px) {
     footer {
@@ -125,10 +125,10 @@ footer input[type='email'] {
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) 
 
 @media only screen and (min-width: 1200px) {
     footer {
         background-color: violet;
     }
-}
+}*/

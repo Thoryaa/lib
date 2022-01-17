@@ -1,0 +1,41 @@
+body {
+    background-color: burlywood;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slids {
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.slids input {
+    display: none;
+}
+
+.slids img {
+    width: 800px;
+    height: 500px;
+}
+
+.nav-man {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid red;
+    ;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}

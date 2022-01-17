@@ -104,6 +104,30 @@
         font-size: 22px;
         color: var(--main);
     }
+    /********************************************/
+    
+    .navigation {
+        width: 800px;
+        height: 500px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .slids {
+        width: 500px;
+        height: 500px;
+        display: flex;
+    }
+    
+    .slids input {
+        display: none;
+    }
+    
+    .navigation img {
+        height: 362px;
+        width: 277px;
+    }
     /******************footer**********************/
     
     footer {
@@ -219,7 +243,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    /********************************/
+    /**************media query******************/
     
     @media (min-width: 600px) {}
     /* Medium devices (landscape tablets, 768px and up) */

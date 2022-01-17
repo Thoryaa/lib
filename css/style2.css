@@ -105,6 +105,55 @@
         color: var(--main);
     }
     /********************************************/
+    
+    .down-header {
+        background-color: darkgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    
+    .down-header img {
+        width: 200px;
+        height: 281px;
+    }
+    
+    .down-header h1 {
+        color: darkblue;
+    }
+    
+    .to-show {
+        width: 104px;
+        border-radius: 33px;
+        border: none;
+        background: yellow;
+        color: red;
+        padding: 3px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: unset;
+    }
+    
+    .container-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        line-height: 55px;
+        padding: 23px;
+    }
+    
+    .checks {
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    .checks input {
+        margin-right: 12px;
+    }
     /******************************************************/
     
     .content {

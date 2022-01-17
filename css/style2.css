@@ -101,17 +101,19 @@
     /******************footer**********************/
     
     footer {
-        background-color: gray;
         color: var(--basic);
-        padding: 35px;
         line-height: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     
     .upper-footer {
+        background-color: gray;
         align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 36px;
+        padding: 35px;
     }
     
     footer .list li {
@@ -188,10 +190,29 @@
     }
     /*down footer*/
     
+    .down-footer {
+        padding: 35px;
+        padding-top: 50px;
+        background-color: var(--basic);
+        color: var(--main);
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: end;
+    }
+    
+    .img-con {
+        display: flex;
+    }
+    
     .visa {
-        height: 33px;
+        height: 49px;
         width: 100px;
-        background: url(../img/visa-logo.png);
+        background: url(../img/Mastercard-Download-PNG.png);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     /********************************/
     
@@ -216,6 +237,9 @@
         .upper-footer {
             grid-template-columns: 1fr 1fr 1fr;
         }
+        .down-footer {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     /* Large devices (laptops/desktops, 992px and up) */
     
@@ -237,6 +261,9 @@
         .upper-footer {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
+        .down-footer {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     
@@ -257,5 +284,8 @@
         }
         .upper-footer {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .down-footer {
+            grid-template-columns: 1fr 1fr;
         }
     }

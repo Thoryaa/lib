@@ -105,28 +105,74 @@
         color: var(--main);
     }
     /********************************************/
+    /******************************************************/
     
-    .navigation {
-        width: 800px;
-        height: 500px;
-        background-color: antiquewhite;
-        border-radius: 10px;
-        overflow: hidden;
+    .content {
+        width: 370px;
+        color: cornflowerblue;
     }
     
-    .slids {
-        width: 500px;
-        height: 500px;
+    .content a {
+        margin-left: 4px;
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    
+    .book {
+        padding: 6px;
         display: flex;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid green;
+        width: 220px;
+        border-radius: 6px;
+        margin: 15px 5px;
     }
     
-    .slids input {
-        display: none;
+    .cate>div {
+        border-radius: 6px 6px 0px 0px;
+        padding: 13px;
     }
     
-    .navigation img {
-        height: 362px;
-        width: 277px;
+    .clear-res,
+    .cl {
+        border-radius: 6px 6px 0px 0px;
+        padding: 13px;
+        background-color: green;
+        color: var(--basic);
+        width: 220px;
+    }
+    
+    .led,
+    .price,
+    .con {
+        background-color: aliceblue;
+        padding: 13px;
+        width: 220px;
+        border: 1px solid rgb(115, 145, 172);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cl {
+        color: var(--main);
+        background-color: white;
+        border: 1px solid #bfcedb;
+        border-radius: 0px;
+    }
+    
+    .cl>div {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .minus {
+        text-align: center;
+        width: 26px;
+        border: 2px solid gray;
+        padding: 1px;
+        font-size: 21px;
+        height: 27px;
     }
     /******************footer**********************/
     

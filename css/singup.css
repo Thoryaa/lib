@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+
+/**************************************singup******************************/
+
+
+/******container*********/
+
+.singup-container {
+    display: grid;
+    row-gap: 47px;
+    padding: 38px;
+}
+
+.title {
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
+    padding: 12px;
+    text-align: center;
+}
+
+.siginup-container form {
+    display: grid;
+    row-gap: 22px;
+}
+
+.siginup-container input,
+.check-con,
+.siginup-container button {
+    width: 81%;
+    height: 35px;
+    padding-right: 17px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+
+.check-con {
+    background-color: white;
+}
+
+.check-con-son {
+    display: flex;
+}
+
+input[type='checkbox'] {
+    height: 19px;
+    width: 30px;
+}
+
+.siginup-container button {
+    color: gray;
+    height: 52px;
+}
+
+.siginup-container .info {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: gray;
+    width: 81%;
+    height: 35px;
+    padding-right: 17px;
+}
+
+.coun-phone {
+    display: flex;
+    gap: 12px;
+    width: 81%;
+    height: 35px;
+    padding-right: 17px;
+    border-radius: 4px;
+}
+
+.country-symbol {
+    padding: 2px;
+    background: aliceblue;
+    display: grid;
+    width: 21%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.country-symbol>select {
+    background: transparent;
+    border: none;
+    color: gray;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: gray;
+}
+
+.sign {
+    color: darkblue;
+}
+
+
+/*****************************************************/
+
+@media only screen and (min-width: 768px) {
+    .singup-container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .singup-container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .singup-container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}

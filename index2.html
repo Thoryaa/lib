@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/login2.css">
+    <link rel="stylesheet" href="css/singup.css">
+    <link rel="stylesheet" href="css/book.css">
     <title>Document</title>
 </head>
 
@@ -15,7 +18,7 @@
     <nav>
 
 
-        <div class="about-serv "><span class="fa fa-user icon"></span><span>ادخل لحسابك أو سجل الان</span></span>
+        <div class="about-serv " id="show-login-btn"><span class="fa fa-user icon"></span><span>ادخل لحسابك أو سجل الان</span></span>
         </div>
         <div> <span class=" icon fa fa-star"></span><span>الرئيسية</span></div>
         <div> <span class="icon fa fa-fan"></span><span>من نحن</span></div>
@@ -27,6 +30,104 @@
 
         <div><span class="icon">english</span><span class=" fa fa-transgender"></span></div>
     </nav>
+    <!----------------log in and singup------------------------->
+
+    <div class="login-container" id='log-in-form'>
+        <div class="login-close">
+            <a href="" onclick="closebtn()" class="close-btn">&times;</a>
+        </div>
+        <div class="container">
+
+            <div class="title">
+                <h4>تسجيل الدخول</h4>
+
+            </div>
+            <form action="">
+                <input class="input-login" type="email" name="" id="" placeholder="البريد الالكتروني او رقم الجوال">
+                <div class="pass-container">
+                    <input type="password" name="" id="" class="pass input-login" placeholder="كلمة السر">
+                    <a href="">نسيت؟</a>
+                </div>
+                <input type="submit" value="تسجيل الدخول" class="btn input-login">
+
+            </form>
+            <div class="part2">
+                <a href="">ليس لديك حساب؟</a>
+                <button class="button-login" id='show-sign-btn'>انشاء حساب جديد</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="siginup-container " id='y-sigin-in-form'>
+        <div class="siginup-close">
+            <a href="" onclick="closebtn2()" class="close-btn">&times;</a>
+        </div>
+        <div class="singup-container">
+            <div class="title">
+                <h4>انشاء حساب </h4>
+
+            </div>
+            <form action="">
+                <div class="coun-phone">
+                    <input type="text" placeholder="رقم الجوال" class="phone-number">
+                    <div class="country-symbol">
+                        <span>رمز البلد</span>
+                        <select name="" id="">
+    
+                <option value="">
+                    <span >po</span>
+                    <span>+967</span>
+                </option>
+                <option value="">
+                    <span >po</span>
+                    <span>+967</span>
+                </option>
+            </select>
+                    </div>
+                </div>
+                <div class="info">
+
+                    <p>
+                        سوف نرسل لك
+                        <h3>رمز التحقق عن طريق رسالة نصية</h3>
+                    </p>
+                </div>
+
+                <button> ارسال رمز التحقق</button>
+                <input type="text" name="" id="" placeholder="الاسم الاول">
+                <input type="text" name="" id="" placeholder="اسم العائلة">
+                <input type="text" name="" id="" placeholder="البريد الالكتروني">
+                <input type="text" name="" id="" placeholder="تاكيد البريد الالكتروني">
+                <input type="text" name="" id="" placeholder="كلمة السر">
+                <div class="check-con">
+                    <div class="check-con-son">
+                        <input type="checkbox" name="" id="">
+
+                        <label for="">اوافق على 
+                    <a href="">الشروط والاحكام</a></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="check-con">
+                        <div class="check-con-son">
+                            <input type="checkbox" name="" id="">
+
+                            <label for="">التسجيل للانضمام للنشرة البريدية </label>
+                        </div>
+                    </div>
+                </div>
+                <button>انشاء حساب</button>
+
+
+            </form>
+            <div class="links"><a href="">ليس لديك حساب؟</a>
+                <a href=""> <span class="sign">  &nbsp;تسجيل الدخول &nbsp;</span></a>
+            </div>
+
+        </div>
+    </div>
+
     <!-----------------------------header---------------------------------------->
     <header>
         <div class="upper-header">
@@ -78,167 +179,248 @@
 
         </div>
     </header>
-    <div class="cate">
-        <div class="content"><a href="">الرئيسية</a> /
-            <a href="">الكتب العربية</a> /
-            <a href="">كتب الكترونية</a></div>
-    </div>
-    <div class="book">
-        <span><svg
+    <div class="h-v">
+        <div class="cate">
+            <div class="content"><a href="">الرئيسية</a> /
+                <a href="">الكتب العربية</a> /
+                <a href="">كتب الكترونية</a></div>
+        </div>
+        <div class="book">
+            <span><svg
              xmlns:xlink="http://www.w3.org/1999/xlink" 
              xmlns="http://www.w3.org/2000/svg" class="icon list__icon" width="25" 
               height="25" ><defs><symbol viewBox="0 0 75 75" id="english_books" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#46877F" cx="37.5" cy="37.5" r="37.5"></circle><path d="M46.984 19c5.86 0 10.078 2.11 10.078 2.11.209.208.417.416.46.789l.01.148v2.812h.937c1.58 0 2.725 1.087 2.807 2.633l.005.18v25.312c0 1.58-1.086 2.725-2.632 2.808l-.18.005H39.25c-.469.469-1.172.937-2.11.937-.87 0-1.538-.202-2.005-.794l-.104-.143H15.813c-1.58 0-2.726-1.087-2.808-2.632l-.005-.18V27.671c0-1.58 1.087-2.725 2.632-2.808l.18-.005h.938v-2.925c.003-.395.04-.61.469-.825 0-.234 4.218-2.109 10.078-2.109 4.922 0 8.437 1.406 9.844 1.875C38.313 20.406 42.063 19 46.984 19zm-.528 30.844c4.143 0 7.345.654 9.155 1.33l.195.076V23.125c-1.263-.469-4.801-1.64-9.35-1.64-4.548 0-8.086.937-9.35 1.64-1.25-.475-4.744-1.64-9.231-1.64-4.364 0-7.787.88-9.13 1.575l-.12.065V51.25c1.75-.469 5-1.406 9.25-1.406 4.098 0 7.267.654 9.057 1.33l.174.069c.007.005.01.005.011.004l-.011-.004v-.001l.019.008c1.773-.475 5.05-1.406 9.331-1.406zm-3.69-21.938v1.875h-8.438v5.157h7.734v1.874h-7.734v5.391h8.438v1.875H31.28V27.906h11.485z" fill="#FFFFFF" fill-rule="nonzero"></path></g></symbol></defs>
             <use xlink:href="#english_books"></use>
             </svg></span>
-        <span>كتب الكترونية</span>
-    </div>
+            <span>كتب الكترونية</span>
+        </div>
 
-    <div>
-        <div class="clear-res"><span>تصفية النتائج</span></div>
-        <div class="led">
-            <span>علامة تجارية </span>
-            <div class="minus"><span>-</span></div>
-        </div>
-        <div class="price"><span>السعر</span>
-            <div class="minus"><span>-</span></div>
-        </div>
-        <div class="cl">
-            <div>
-                <progress></progress>
+        <div>
+            <div class="clear-res"><span>تصفية النتائج</span></div>
+            <div class="led">
+                <span>علامة تجارية </span>
+                <div class="minus"><span>-</span></div>
             </div>
-            <div><span>ر.س.0</span>
-                <span>15ر.س.0</span></div>
-        </div>
-        <div class="con"><span>صيغة الكتاب</span>
-            <div class="minus"><span>-</span></div>
-        </div>
-
-    </div>
-
-    <!---footer-------------------------------------------------------------------------------->
-    <footer>
-        <div class="upper-footer">
-            <div class="d1">
-                <h4>انضم الى نشرتنا البريدية </h4>
+            <div class="price"><span>السعر</span>
+                <div class="minus"><span>-</span></div>
+            </div>
+            <div class="cl">
                 <div>
+                    <progress></progress>
+                </div>
+                <div><span>ر.س.0</span>
+                    <span>15ر.س.0</span></div>
+            </div>
+            <div class="con"><span>صيغة الكتاب</span>
+                <div class="minus"><span>-</span></div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------->
+    <div class="book-card">
+        <div><img src="../img/1.jpeg" alt=""></div>
 
-                    <div class="emai-container">
-                        <div class="emai">
-                            <input type="email" name="" id="" placeholder="ادخل بريدك الالكتروني">
-                            <i class="fa fa-lock"></i>
+        <div class="book-content">
+            <div class="book-upper-con">
+                <div class="book-type">
+                    <h3>كتاب الكتروني</h3>
+
+                    <span><svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+                xmlns="http://www.w3.org/2000/svg" class="book-type__icon" width="20"  height="20" ><defs><symbol viewBox="0 0 13 15" id="ebook" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M.553 1.687h12.098v13.056H.553z" fill="none"></path><path d="M11.52 11.19L7.3 12.935V4.697l4.22-1.744v8.238zm-1.713 2.047c-.224.09-.405-.081-.405-.38 0-.3.181-.615.405-.704.223-.089.405.082.405.381 0 .3-.182.614-.405.703zm-5.544-.712l-.028-1.154c.975-.252 1.033-1.948 1.033-1.948l.657.219c-.209 2.905-1.662 2.883-1.662 2.883zM1.632 9.598l.746.248s.35.999 1.006 1.303l-.058-2.33.649.215.085 3.465s-1.552.056-2.428-2.901zM3.959 8.38c.007.313-.135.513-.314.454-.181-.06-.335-.36-.343-.672-.008-.313.134-.52.316-.458.179.059.333.364.34.676zm-2.435.872c-.474-2.137.039-3.467.039-3.467l3.184 1.062c-1.11-2.178-2.176-1.013-2.176-1.013l-.859-.286c.57-1.612 1.949-1.023 1.949-1.023 1.826.827 2.168 3.826 2.168 3.826L2.041 7.088c-.268.907.188 2.399.188 2.399l-.705-.235zm10.561-7.42c-.487-.258-.967-.134-1.47.083l-4.013 1.79-4.063-1.79c-.504-.217-.892-.203-1.211-.082-.512.196-.775.51-.775 1.084v8.205c0 .7.403 1.331 1.017 1.596l4.336 1.865c.095.04.445.16.743.16.26 0 .557-.12.65-.16l4.335-1.865c.615-.265 1.017-.896 1.017-1.596V2.917c0-.574-.12-.851-.566-1.086z" fill="#9E1D22"></path><path d="M2.101 1.308l.13.037.111.04c.168.066.311.136.478.208.326.144.669.3 1.01.459l2.654 1.236c-.48-.347-1.388-1-2.307-1.63a338.79 338.79 0 01-.502-.337 8.57 8.57 0 00-.486-.301 1.056 1.056 0 00-.43-.142 1.265 1.265 0 00-.408.017 1.166 1.166 0 00-.53.266 1.185 1.185 0 00-.09.09c.042.002.081.003.124.009.08.015.159.022.246.048" fill="#9E1D22"></path><path d="M3.356.349h3.128v2.714H3.356z" fill="none"></path><path d="M3.617.603l.089.056.074.055c.11.087.202.172.31.263.211.18.433.374.651.569l1.237 1.102c.154.129.383.312.506.415-.292-.38-.884-1.094-1.399-1.731-.2-.244-.404-.497-.596-.698a.843.843 0 00-.29-.203 1.005 1.005 0 00-.306-.078.874.874 0 00-.537.123c.029.012.059.022.089.035.056.03.113.053.172.092m6.709.991c.167-.073.31-.143.478-.209l.112-.04.13-.036c.087-.027.166-.035.246-.05.042-.005.082-.006.122-.008a1.2 1.2 0 00-.301-.239 1.14 1.14 0 00-.318-.116 1.263 1.263 0 00-.408-.018 1.058 1.058 0 00-.43.141 8.99 8.99 0 00-.485.301l-.502.337a123.27 123.27 0 00-2.308 1.631l2.655-1.236c.34-.16.683-.315 1.01-.458" fill="#9E1D22"></path><path d="M6.662.349H9.79v2.714H6.66z" fill="none"></path><path d="M8.405 1.546c.218-.195.44-.388.651-.569.108-.091.2-.175.31-.263L9.441.66l.088-.056c.059-.039.116-.063.172-.092.03-.013.06-.023.09-.035a.874.874 0 00-.537-.123 1.004 1.004 0 00-.308.078.85.85 0 00-.288.203c-.193.201-.397.454-.596.698-.515.637-1.108 1.35-1.4 1.731.123-.103.352-.286.506-.415l1.237-1.102" fill="#9E1D22"></path><path d="M.037 14.743h12.614V.349H.037z" fill="none"></path></g></symbol></defs>
+            <use xlink:href="#ebook">
+        </use></svg></span>
+                </div>
+                <div><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="20" height="16"><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
+           <use xlink:href="#star" fill="#cacfd6"></use>
+           </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="20" height="16"><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
+          <use xlink:href="#star" fill="#cacfd6"></use>
+          </svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="20" height="16"><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
+         <use xlink:href="#star" fill="#cacfd6"></use>
+         </svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="20" height="16"><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
+        <use xlink:href="#star" fill="#cacfd6"></use>
+        </svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="20" height="16"><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
+       <use xlink:href="#star" fill="#EBE162"></use>
+       </svg>
+
+
+                </div>
+
+                <div class="book-title">ن النسوية (كتاب الكتروني)</div>
+            </div>
+            <div class="book-middle-con">
+                <div class="book-price">
+                    <span class="price-in">34.99 <span>ر.س</span></span>
+
+                </div>
+                <div style="color: #cacfd6;">شامل الضريبة</div>
+                <div style="color: #8b94a6;"> <span>صيغ اخرى:</span>
+                    <span style="color: blue;font-weight: 600;"> كتاب مطبوع</span.</div>
+    </div>
+   
+</div>
+<div class="book-footer-con">
+    <div><svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+        xmlns="http://www.w3.org/2000/svg" class="button__icon" width="33"  height="33" ><defs><symbol viewBox="0 0 81 62.9" id="compare" xmlns="http://www.w3.org/2000/svg"><path d="M76.8 34.6H56v-8.4c0-2.5-1.3-3.2-3.2-1.5L35.7 40.3c-1.9 1.7-1.8 4.4 0 6.1L52.8 62c1.9 1.7 3.2 1 3.2-1.5v-8.9h20.8c2.5 0 4.2-1.8 4.2-4.3v-7.9c0-2.5-1.7-4.8-4.2-4.8zM45.3 16.5L28.2.9C26.3-.8 25-.1 25 2.4v9.2H4.2C1.7 11.6 0 13 0 15.5v7.9c0 2.5 1.7 5.1 4.2 5.1H25v8c0 2.5 1.4 3.2 3.2 1.5l17.1-15.6c1.9-1.5 1.9-4.2 0-5.9z"></path></symbol></defs>
+        <use xlink:href="#compare" fill="#42526E">
+    </use></svg></div>
+    <div><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns="http://www.w3.org/2000/svg" class="icon list__icon side-menu__icon ar-flip" width="33"  height="33" ><defs><symbol viewBox="0 0 32 32" id="cart-circle" xmlns="http://www.w3.org/2000/svg"><defs><path d="M1.087 0A1.1 1.1 0 000 1.108c0 .609.49 1.107 1.088 1.107.375-.004.721-.2.92-.52.197-.32.22-.718.058-1.058a2.474 2.474 0 011.781 1.976l2.038 11.8a1.64 1.64 0 001.47 1.36A1.385 1.385 0 007.2 17.22c.227.473.701.775 1.224.78a1.37 1.37 0 001.22-.773 1.385 1.385 0 00-.142-1.444h3.549a1.39 1.39 0 00-.137 1.44c.227.468.697.768 1.215.776.52-.005.992-.304 1.22-.773a1.385 1.385 0 00-.141-1.443h1.366v-.552H7.491a1.09 1.09 0 01-1.072-.917l-.368-2.13h8.695c.878 0 1.645-.616 1.85-1.485L18 4.735 4.572 3.617l-.19-1.098A3.008 3.008 0 001.438 0h-.351zm5.661 6.429h8.362a.32.32 0 01.32.321.32.32 0 01-.32.321H6.748a.32.32 0 01-.32-.321.32.32 0 01.32-.321zm-6.507 0h3.378c.132 0 .24.144.24.321 0 .177-.108.321-.24.321H.239C.108 7.071 0 6.927 0 6.75c0-.177.107-.321.24-.321zM8.034 9h5.79a.323.323 0 010 .642h-5.79a.323.323 0 010-.642zM1.608 9h1.928a.32.32 0 01.32.321.32.32 0 01-.32.321H1.608a.323.323 0 010-.642z" id="bga"></path></defs><g fill="none" fill-rule="evenodd"><circle fill="#D4070E" cx="16" cy="16" r="16"></circle><use fill="#FFFFFF" fill-rule="nonzero" xlink:href="#bga" transform="translate(7 7)"></use></g></symbol></defs>
+        <use xlink:href="#cart-circle"></use>
+        </svg></div>
+    <div><svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+        xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon"
+         width="25"  height="25" ><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
+        <use xlink:href="#star" fill="#42526E"></use>
+        </svg></div>
+
+</div>
+
+<div class="star" style="color: brown;">
+    <span>عرض خاص:</span>
+                    <span id="seconds"></span>
+                    <span>:</span>
+                    <span id="minutes"></span>
+                    <span>:</span>
+                    <span id="hours"></span>
+                    <span>:</span>
+                    <span id="days"></span>
+                </div>
+            </div>
+
+        </div>
+        <!----------------------------------->
+
+
+        <!---footer-------------------------------------------------------------------------------->
+        <footer>
+            <div class="upper-footer">
+                <div class="d1">
+                    <h4>انضم الى نشرتنا البريدية </h4>
+                    <div>
+
+                        <div class="emai-container">
+                            <div class="emai">
+                                <input type="email" name="" id="" placeholder="ادخل بريدك الالكتروني">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <button class="concat-btn">اشتراك</button>
                         </div>
-                        <button class="concat-btn">اشتراك</button>
+                    </div>
+
+                    <h4> تواصل معانا </h4>
+                    <ul class="social">
+                        <li>
+                            <a href=""> <i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fab fa-snapchat"></i></a>
+                        </li>
+
+
+
+                        <li>
+                            <a href=""><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="jr-social__image" width="25"  height="25" ><defs><symbol viewBox="0 0 112.2 112.2" id="linkedin" xmlns="http://www.w3.org/2000/svg"><circle cx="56.1" cy="56.1" r="56.1" fill="#007AB9"></circle><path d="M89.6 60.6v23.1H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1-3.7 0-5.9 2.5-6.9 4.9-.4.9-.4 2.1-.4 3.3v22.5H48.7s.2-36.5 0-40.3h13.4v5.7l-.1.1h.1v-.1c1.8-2.7 5-6.7 12.1-6.7 8.8 0 15.4 5.7 15.4 18.1zM34.7 24c-4.6 0-7.6 3-7.6 7 0 3.9 2.9 7 7.4 7h.1c4.7 0 7.6-3.1 7.6-7-.1-4-3-7-7.5-7zm-6.8 59.7h13.4V43.4H27.9v40.3z" fill="#F1F2F2"></path></symbol></defs><use xlink:href="#linkedin"></use></svg></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fab fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>خدمات العملاء</h4>
+                    <div>
+                        <ul>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                        </ul>
                     </div>
                 </div>
 
-                <h4> تواصل معانا </h4>
-                <ul class="social">
-                    <li>
-                        <a href=""> <i class="fab fa-tiktok"></i></a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fab fa-snapchat"></i></a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fab fa-facebook"></i></a>
-                    </li>
-                </ul>
+                <div class="list">
+                    <h4>خدمات العملاء</h4>
+                    <div>
+                        <ul>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <h4>خدمات العملاء</h4>
+                    <div>
+                        <ul>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <h4>خدمات العملاء</h4>
+                    <div>
+                        <ul>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                            <li>الاسئلة المتكرره</li>
+                            <li> مبيعات الشركات</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="down-footer">
+                <div class="img-con">
+                    <div class="visa">
 
-            <div class="list">
-                <h4>خدمات العملاء</h4>
+                    </div>
+                    <div class="visa">
+
+                    </div>
+                    <div class="visa">
+
+                    </div>
+                    <div class="visa">
+
+                    </div>
+                    <div class="visa">
+
+                    </div>
+                </div>
                 <div>
-                    <ul>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                    </ul>
+                    <p>سياسية الخصوصية | شروط الخدمة</p>
+                    <p>جميع حقوق الطبع محفوظة لمكتب جرير &copy;2015 س . ت 1010032264 اونلاين س.ت 1010564213</p>
                 </div>
             </div>
-
-            <div class="list">
-                <h4>خدمات العملاء</h4>
-                <div>
-                    <ul>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="list">
-                <h4>خدمات العملاء</h4>
-                <div>
-                    <ul>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="list">
-                <h4>خدمات العملاء</h4>
-                <div>
-                    <ul>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                        <li>الاسئلة المتكرره</li>
-                        <li> مبيعات الشركات</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="down-footer">
-            <div class="img-con">
-                <div class="visa">
-
-                </div>
-                <div class="visa">
-
-                </div>
-                <div class="visa">
-
-                </div>
-                <div class="visa">
-
-                </div>
-                <div class="visa">
-
-                </div>
-            </div>
-            <div>
-                <p>سياسية الخصوصية | شروط الخدمة</p>
-                <p>جميع حقوق الطبع محفوظة لمكتب جرير &copy;2015 س . ت 1010032264 اونلاين س.ت 1010564213</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        <script src="css/main.js"></script>
+        <script src="js/counter.js"></script>
 </body>
 
 </html>

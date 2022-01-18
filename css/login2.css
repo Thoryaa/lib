@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.login-close a,
+.siginup-close a {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    position: fixed;
+    top: 4px;
+    right: 61px;
+    text-decoration: none;
+}
+
+.login-container,
+.siginup-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    row-gap: 27px;
+    text-align: center;
+    padding: 32px;
+}
+
+.looooog {
+    visibility: visible;
+}
+
+.title {
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
+    padding: 12px;
+}
+
+form {
+    display: grid;
+    row-gap: 22px;
+    justify-items: center;
+}
+
+
+/*input and div of password*/
+
+.input-login,
+.pass-container {
+    width: 81%;
+    height: 35px;
+    padding-right: 17px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+
+
+/*pass word input*/
+
+.pass {
+    flex: 1;
+    background: transparent;
+    border: none;
+    margin-left: 18px;
+    padding: 7px;
+    outline: none;
+    width: 60%;
+    background-color: aliceblue;
+}
+
+
+/*log in button*/
+
+.login-container .btn {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px gray);
+}
+
+.login-container .btn:active {
+    background-color: white;
+    color: red;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+
+/*part2 contain  ready you have account?-link-  and button to crete new account*/
+
+.login-container .part2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    justify-items: center;
+}
+
+
+/*link of ready you have account? */
+
+.login-container .part2 a {
+    color: gray;
+}
+
+.button-login {
+    color: gray;
+    height: 44px;
+    width: 38%;
+    background: white;
+    border: none;
+    filter: drop-shadow(2px 0px 3px black);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-login:active {
+    background-color: gray;
+    color: white;
+}
+
+
+/*********************************
+/
+/* Extra small devices (phones, 600px and down) */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}

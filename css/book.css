@@ -1,0 +1,55 @@
+.book-card {
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    display: grid;
+    text-align: center;
+    width: 200px;
+    background-color: aliceblue;
+    border: 1px solid #98a4b5;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding: 0px 13px 5px;
+}
+
+.book-content {
+    justify-content: center;
+    display: grid;
+    gap: 18px;
+}
+
+.book-card img {
+    height: 200px;
+}
+
+.book-type {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* justify-content: center; */
+    justify-content: center;
+    color: #42526e;
+}
+
+.book-type h3 {
+    margin-bottom: 1px;
+}
+
+.book-title {
+    color: #8b94a6;
+}
+
+.book-price {
+    display: flex;
+    color: red;
+    justify-content: center;
+}
+
+.book-price .price-in {
+    font-weight: bold;
+}
+
+.book-footer-con {
+    display: flex;
+    justify-content: space-between;
+}
